@@ -1,8 +1,10 @@
+@import url("//cdn.web-fonts.ge/fonts/alk-life/css/alk-life.min.css");
 * {
     margin: 0;
     padding: 0;
     font-family: "Caveat", cursive;
     font-family: "Kdam Thmor Pro", sans-serif;
+
     /* font-family: "Nothing You Could Do", cursive;8*/
     /* font-family: "Varela Round", sans-serif; */
 }
@@ -22,7 +24,7 @@
 
 nav {
     display: flex;
-    padding: 2% 6%;
+    padding: 1% 4%;
     justify-content: space-between;
     align-items: center;
 }
@@ -34,6 +36,7 @@ nav img {
 .nav-links {
     flex: 1;
     text-align: right;
+ 
 }
 
 .nav-links ul li {
@@ -75,6 +78,7 @@ nav img {
 
 .text-box h1 {
     font-size: 62px;
+    font-family: "ALK Life", sans-serif;
 }
 
 .text-box p {
@@ -95,7 +99,48 @@ nav img {
 }
 
 .hero-btn:hover {
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #fff;
+    background: #023;
     transition: 1.5s;
+}
+
+nav .fas{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: #023;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fas{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+     .nav-links ul{
+         padding: 30px;
+     } 
+
+
+
 }
